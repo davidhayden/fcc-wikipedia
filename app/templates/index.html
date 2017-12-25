@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <header>
+        <h1>Wikipedia Viewer</h1>
+        <p>A freeCodeCamp Project</p>
+    </header>
+    <div class="search-form">
+        <form action="" method="post" name="search">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.query.label }}
+                {{ form.query(class="form-control", placeholder="Enter text to search...", autofocus = True) }}
+                {% for error in form.query.errors %}
+                    <p class="error">{{ error }}</p>
+                {% endfor %}
+            </div>
+            {{ form.submit(class="btn btn-default") }}
+        </form>
+     </div>
+     {% if data %}
+     <div class="search-results">
+         <ul class="list-unstyled">
+         {% for i in range(data[1]|length) %}
+            <li>
+                <h3><a href="{{ data[3][i] }}">{{ data[1][i] }}</a></h3>
+                <p>{{ data[2][i]}}</p>
+            </li>
+         {% endfor %}
+        </ul>
+     </div>
+     {% endif %}
+{% endblock %}
+{% block footer %}
+    <p>Coded by <a href="https://github.com/davidhayden">David Hayden</a></p>
+{% endblock %}

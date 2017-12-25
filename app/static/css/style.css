@@ -1,0 +1,29 @@
+body {
+    max-width: 600px;
+    margin: 10px auto;
+    font: 400 16px/1.6 'Roboto', sans-serif;
+    color: #454545;
+}
+h1 {
+    font: 700 45px/1.0 'Roboto', sans-serif;
+}
+div.container {
+    max-width: 600px;
+}
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.search-form {
+    margin-bottom: 40px;
+}
+.error {
+    margin-top: 5px;
+    color: red;
+}
+.search-results {
+    margin-bottom: 40px;
+}
+footer p {
+    text-align: center;
+}
