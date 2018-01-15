@@ -47,7 +47,7 @@ $ (env) flask run
 
 You can browse to localhost on port 5000 to view the Wikipedia Viewer app.
 
-### Step 3: Run via Gunicorn
+### Step 4: Run via Gunicorn
 
 If you're running on Mac or Linux, pip installed Gunicorn, which is used to run the website on Heroku. You can optionally run the website using Gunicorn.
 
@@ -62,7 +62,7 @@ $ (env) gunicorn wiki:app
 
 You can browse to localhost on port 8000 to view the Wikipedia Viewer app.
 
-### Step 4: Quit Web Server and Deactivate Virtual Environment
+### Step 5: Quit Web Server and Deactivate Virtual Environment
 
 When you're done viewing the Wikipedia Viewer, you can press `CTRL+C` to exit the running Flask or Gunicorn web server.
 
